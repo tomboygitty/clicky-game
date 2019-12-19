@@ -2,10 +2,9 @@ import React, {Component} from 'react';
 import {Col, Row, Container} from 'react-bootstrap';
 import Button from '../Button';
 import jojos from '../../jojos.json';
-var numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11];
+var numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 export default class Grid extends Component {
-
     // Initialize state
     state = {
         score: 0,
@@ -19,7 +18,7 @@ export default class Grid extends Component {
 
     // Randomize the locations of each button
     loadButtons = () => {
-        // Randomize numbers 1-12
+        // Randomize numbers 0-11
         var currentIndex = numArray.length, temporaryValue, randomIndex;
         
         // While there remain elements to shuffle...
@@ -55,47 +54,53 @@ export default class Grid extends Component {
     render() {
         return (
             <Container className="justify-content-md-center">
-                <Row className="row-1">
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[0]].image} id="button-1"/>
+                <Row className="">
+                    <Col className="col-2"></Col>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[0]].image} name={jojos[numArray[0]].name} id="button-1"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[1]].image} id="button-2"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[1]].image} name={jojos[numArray[0]].name} id="button-2"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[2]].image} id="button-3"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[2]].image} name={jojos[numArray[0]].name} id="button-3"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[3]].image} id="button-4"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[3]].image} name={jojos[numArray[0]].name} id="button-4"/>
                     </Col>
+                    <Col className="col-2"></Col>
                 </Row>
-                <Row className="row-2">
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[4]].image} id="button-5"/>
+                <Row className="">
+                    <Col className="col-2"></Col>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[4]].image} name={jojos[numArray[0]].name} id="button-5"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[5]].image} id="button-6"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[5]].image} name={jojos[numArray[0]].name} id="button-6"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[6]].image} id="button-7"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[6]].image} name={jojos[numArray[0]].name} id="button-7"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[7]].image} id="button-8"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[7]].image} name={jojos[numArray[0]].name} id="button-8"/>
                     </Col>
+                    <Col className="col-2"></Col>
                 </Row>
-                <Row className="row-3">
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[8]].image} id="button-9"/>
+                <Row className="">
+                    <Col className="col-2"></Col>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[8]].image} name={jojos[numArray[0]].name} id="button-9"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[9]].image} id="button-10"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[9]].image} name={jojos[numArray[0]].name} id="button-10"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[10]].image} id="button-11"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[10]].image} name={jojos[numArray[0]].name} id="button-11"/>
                     </Col>
-                    <Col className="col-3">
-                        <Button src={jojos[numArray[11]].image} id="button-12"/>
+                    <Col className="col-2">
+                        <Button src={jojos[numArray[11]].image} name={jojos[numArray[0]].name} id="button-12"/>
                     </Col>
+                    <Col className="col-2"></Col>
                 </Row>
             </Container>
         )
