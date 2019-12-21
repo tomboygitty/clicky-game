@@ -1,15 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "./style.css";
 
-export default class Grid extends Component {
-    render() {
-        return (
-            <nav className="navbar">
-                <ul>
-                    <li className="nav ">Click an image to begin!</li>
-                    <li className="nav ">Score: 0 | Top Score: 0</li>
-                </ul>
-            </nav>
-        )
-    }
+function Navbar(props) {
+    return (
+        <nav className="navbar nav navbar-static-top">
+            <div>
+                <li className="navbar-left">Click an image to begin!</li>
+            </div>
+            <div>
+                <li className="navbar-center">{(props.success === null) ? '' : props.success ? 'You guessed correctly!' : 'You guessed incorrectly!'}</li>
+            </div>
+            <div>
+                <li className="navbar-right">Score: {props.currentScore} | Top Score: {props.topScore}</li>
+            </div>
+        </nav>
+    )
 }
+
+export default Navbar;
