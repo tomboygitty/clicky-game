@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name": "Jonathan",
-        "image": "/img/jonathan.png"
+        "image": "img/jonathan.png"
     },
     {
         "id": 2,
         "name": "Joseph",
-        "image": "/img/joseph.jpg"
+        "image": "img/joseph.jpg"
     },
     {
         "id": 3,
         "name": "Jotaro",
-        "image": "/img/jotaro.png"
+        "image": "img/jotaro.png"
     },
     {
         "id": 4,
         "name": "Josuke_4",
-        "image": "/img/josuke_4.jpg"
+        "image": "img/josuke_4.jpg"
     },
     {
         "id": 5,
         "name": "Giorno",
-        "image": "/img/giorno.jpg"
+        "image": "img/giorno.jpg"
     },
     {
         "id": 6,
         "name": "Jolyne",
-        "image": "/img/jolyne.jpg"
+        "image": "img/jolyne.jpg"
     },
     {
         "id": 7,
         "name": "Johnny",
-        "image": "/img/johnny.jpg"
+        "image": "img/johnny.jpg"
     },
     {
         "id": 8,
         "name": "Josuke_8",
-        "image": "/img/josuke_8.jpg"
+        "image": "img/josuke_8.jpg"
     },
     {
         "id": 9,
         "name": "DIO",
-        "image": "/img/DIO.png"
+        "image": "img/DIO.png"
     },
     {
         "id": 10,
         "name": "Speedwagon",
-        "image": "/img/speedwagon.png"
+        "image": "img/speedwagon.png"
     },
     {
         "id": 11,
         "name": "Gyro",
-        "image": "/img/gyro.png"
+        "image": "img/gyro.png"
     },
     {
         "id": 12,
         "name": "Weather Report",
-        "image": "/img/weather_report.png"
+        "image": "img/weather_report.png"
     }
 ]
